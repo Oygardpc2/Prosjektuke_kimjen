@@ -1,9 +1,6 @@
 namespace SpriteKind {
     export const wall = SpriteKind.create()
 }
-controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.setImage(assets.image`up`)
-})
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tileGrass3, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level9`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.darkGroundWest)
@@ -24,6 +21,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (s
     if (controller.down.isPressed()) {
         mySprite.y += -5
     }
+})
+controller.up.onEvent(ControllerButtonEvent.Repeated, function () {
+    mySprite.setImage(assets.image`up`)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`left`)
