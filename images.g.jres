@@ -1,0 +1,39 @@
+{
+    "image1": {
+        "data": "hwQQABAAAAAAAADwAAAAAAAAAPAPAAAAAAD/H/////8AAPD//////wAAAB///w8AAADw//////8AAP///////wAAAPD//w8AAAAA8PD/DwAAAAAA8P///wAAAADw////AADwD/D/DwAAAP8P8P///wAA/wDw////AAD///8PAAAAAPD//wAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "left"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAADwDwAAAPAPAP8PAAD//////w8AAPAf////DwAAAP////8PAADwH////w8AAP//////DwAAAPAPAAAPAAAA8AAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "sit0"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAPD//wAAAAAA////DwAAAAD/APD///8AAP8P8P///wAA8A/w/w8AAAAAAPD///8AAAAA8P///wAAAPDw/w8AAAAA8P//DwAAAP///////wAA8P//////AAAAH///DwAAAPD//////wAA/x//////AAAA8A8AAAAAAADwAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "right"
+    },
+    "image5": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAAAAAAADwDwAAAAAA////////DwDw//////8PAAD////v7u4O8P//////DwD///////8PAADwDwAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "up"
+    },
+    "image4": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAAAAAAA/wAAAAAA/v////8AAADu//H///D//+/+/w8AAAAA7v/x//8AAAD+/////wAAAAAA/wAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "down"
+    },
+    "anim1": {
+        "namespace": "myAnimations",
+        "id": "anim1",
+        "mimeType": "application/mkcd-animation",
+        "data": "YzgwMDEwMDAxMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIwMDAwMDAwMDAwMDAyMDIwMjIwMDAwMDAwMDAwMjIwZjJmMDIwMDAwMDAwMDIwMDAyMDAyMDAwMDAwMDAyMDBmMmYwMDAwMDAwMDAwMDBmMjAyMDAwMDAwMDAwMDIwMjIwMjAwMDAwMDAwMjIyMjIwMjIwMjAwMDAwMDAwMDAyMDAwMjIwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIyMDAwMDAwMDAwMDAwMjIyMjAwMDAwMDAwMDAyMjAyMjAwMjAwMDAwMDIwMDIwMDAwMjIwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIyMDIwMDAwMDAwMDAwMjAwMjIwMDIwMDAwMDAwMDIwMGZmMDAyMDAwMDAwMDIyMDAwMDAwMjIwMDAwMDIyMjBmZmZmMDAyMjAwMDAyMDAyZjIyZjIwMDIwMDAwMDAyMjAwMDIyMjAwMDAwMDAwMDAyMjIyMDIwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIyMjIwMDAwMDAwMDAwMjIwMjIwMDAwMDAw",
+        "displayName": "myAnim"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
