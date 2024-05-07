@@ -26,9 +26,19 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`left`)
 })
 sprites.onOverlap(SpriteKind.Food, SpriteKind.Player, function (sprite, otherSprite) {
-    mySprite.sayText("*Yum :3*", 1000, true)
-    fish.setPosition(1000, 1000)
-    mySprite2 += 1
+    tiles.setCurrentTilemap(tilemap`cutscene`)
+    picture.setPosition(77, 60)
+    scene.cameraFollowSprite(picture)
+    picture.setScale(2, ScaleAnchor.Middle)
+    animation.runImageAnimation(
+    picture,
+    assets.animation`happy ending`,
+    3000,
+    false
+    )
+    pause(12000)
+    game.setGameOverMessage(true, "Happy ending")
+    game.gameOver(true)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`right`)
@@ -39,29 +49,20 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tileDarkGrass2, function (sprite, location) {
     if (value == 1) {
         mySprite.sayText("On the other paw... Maybe you should stay here for a while...")
-        animation.runImageAnimation(
-        picture,
-        assets.animation`myAnim`,
-        4000,
-        false
-        )
     }
 })
-let mySprite2 = 0
 let value = 0
 let fish: Sprite = null
 let picture: Sprite = null
 let mySprite: Sprite = null
 music.play(music.createSong(assets.song`basic`), music.PlaybackMode.LoopingInBackground)
 mySprite = sprites.create(assets.image`sit0`, SpriteKind.Player)
-picture = sprites.create(assets.image`humanhunger ending`, SpriteKind.cut)
-mySprite.setPosition(0, 0)
-picture.follow(mySprite, 1000)
+picture = sprites.create(assets.image`myImage`, SpriteKind.cut)
 controller.moveSprite(mySprite)
 tiles.setCurrentTilemap(tilemap`level0`)
 tiles.placeOnRandomTile(mySprite, sprites.castle.tileGrass2)
 fish = sprites.create(assets.image`fish`, SpriteKind.Food)
-tiles.placeOnRandomTile(fish, sprites.castle.tileGrass1)
+tiles.placeOnRandomTile(fish, sprites.castle.tileGrass2)
 scene.cameraFollowSprite(mySprite)
 pause(1000)
 mySprite.sayText("You seem to have been playing for too long.", 5000, true)
